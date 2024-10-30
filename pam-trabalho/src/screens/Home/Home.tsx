@@ -2,9 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import React from "react";
 import {View} from 'react-native';
 import styles from "./HomeStyles";
-import { CpsLogo } from '../../components/Logo/Logo';
+import { CpsLogo } from '../../components/CpsLogo/CpsLogo';
 
-import { Button } from '../../components/Button/Button';
+import { CpsButton } from '../../components/CpsButton/CpsButton';
 
 export default function Home(){
     return(
@@ -15,7 +15,7 @@ export default function Home(){
 
 <View style={styles.inputContainer}>
  
-  <Button/>
+  <CpsButton/>
 </View>
 
 

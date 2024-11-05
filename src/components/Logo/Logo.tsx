@@ -4,10 +4,10 @@ import logo from '../../../assets/logocps.png'
 
 import { styles } from './LogoStyles';
 
-export function CpsLogo() {
+export function Logo() {
   return (
     <View>
-   <Text style={styles.title}> CPS PASS GENERATOR</Text>
+   <Text style={styles.title}> MAMMA MIA!</Text>
 
 <Image
  source={logo}

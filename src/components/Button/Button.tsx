@@ -3,14 +3,15 @@ import {  Text, Pressable } from 'react-native';
 
 import { styles } from './ButtonStyles';
 
-import { CpsTextInput } from '../TextInput/TextInput';
+import { ClaTextInput } from '../TextInput/TextInput';
 import generatePass from '../../services/passwordService';
 
 
 
 
 
-export function CpsButton() {
+
+export function Button() {
   const[pass, setPass] = useState('')
 
   function handleGenerateButton(){
@@ -25,7 +26,7 @@ function handleCopyButton(){
 
   return (
     <>
-     <CpsTextInput pass={pass}/>
+     <ClaTextInput pass={pass}/>
 
 <Pressable
 onPress={handleGenerateButton}

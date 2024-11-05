@@ -3,10 +3,11 @@ import {  Text, Pressable } from 'react-native';
 
 import { styles } from './ButtonStyles';
 
-import {TextInput } from '../../components/TextInput/TextInput';
+import { ClaTextInput } from '../TextInput/TextInput';
 import generatePass from '../../services/passwordService';
 
-import * as Clipboard from 'expo-clipboard';
+
+
 
 
 
@@ -20,12 +21,12 @@ export function Button() {
 
 function handleCopyButton(){
 
-  Clipboard.setStringAsync(pass)
+ 
 }
 
   return (
     <>
-     <TextInput pass={pass}/>
+     <ClaTextInput pass={pass}/>
 
 <Pressable
 onPress={handleGenerateButton}
